@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisyui link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper.bundle.main.css" />
+    <!-- tailwindCSS link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- box icon  link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar -->
+      <div class="navbar lg:px-10 py-3">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-80"
+            >
+              <li><a class="text-[16px] p-2 font-semibold">Home</a></li>
+              <li><a class="text-[16px] p-2 font-semibold">About Us</a></li>
+              <li><a class="text-[16px] p-2 font-semibold">Services</a></li>
+              <li><a class="text-[16px] p-2 font-semibold">Tract Record</a></li>
+              <li><a class="text-[16px] p-2 font-semibold">Media</a></li>
+              <li><a class="text-[16px] p-2 font-semibold">Contact</a></li>
+              <button
+                class="bg-gradient-to-r from-[#FE7D15] to-[#FB4738] text-white rounded-full px-4 py-4 text-[16px] font-semibold"
+              >
+                Order Services
+              </button>
+            </ul>
+          </div>
+          <a class="w-[70px]"><img src="./asset/images/logo.png" alt="" /></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[18px] font-semibold">Home</a></li>
+            <li><a class="text-[18px] font-semibold">About Us</a></li>
+            <li><a class="text-[18px] font-semibold">Services</a></li>
+            <li><a class="text-[18px] font-semibold">Tract Record</a></li>
+            <li><a class="text-[18px] font-semibold">Media</a></li>
+            <li><a class="text-[18px] font-semibold">Contact</a></li>
+            <button
+              class="bg-gradient-to-r from-[#FE7D15] to-[#FB4738] text-white rounded-full px-4 text-[16px] font-semibold"
+            >
+              Order Services
+            </button>
+          </ul>
+        </div>
+      </div>
+
+      <!-- hero section  -->
+      <div class="hero min-h-screen lg:px-10">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="./asset/images/hero.png"
+            class="max-w-[300px] sm:-mt-96 md:-mt-0 lg:-mt-0 lg:max-w-sm"
+          />
+          <div>
+            <h1
+              class="text-3xl lg:text-5xl font-bold text-[#441355] leading-10"
+            >
+              A new frontier in research <br />
+              and development
+            </h1>
+            <p class="py-6 font-[poppins]">
+              Smart Vision for Consultancy and Development was incorporated in
+              2011 in Somalia. We focus majorly on monitoring, evaluation,
+              research and learning (MERL), institutional capacity development
+              services, private sector development, quality infrastructure and
+              trade facilitation, mainly in Somalia and across the greater Horn
+              of Africa region.
+            </p>
+            <button>
+              <a class="underline font-semibold" href="#">See More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- about section  -->
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <div
+            class=""
+            style="background-image: url(./asset/images/about-bg.png)"
+          >
+            <img
+              src="./asset/images/about man.png"
+              class="max-w-[300px] lg:max-w-sm lg:ml-20"
+            />
+          </div>
+          <div class="lg:ml-40">
+            <h1 class="text-3xl lg:text-6xl font-bold text-[#441355]">
+              About Us
+            </h1>
+            <p class="py-6 font-[Alata] leading-8 lg:w-[400px]">
+              Smart Vision for Consultancy and Development was incorporated in
+              2011 in Somalia. We focus majorly on monitoring, evaluation,
+              research and learning (MERL), institutional capacity development
+              services, private sector development, quality infrastructure and
+              trade facilitation, mainly in Somalia and across the greater Horn
+              of Africa region. At Smart Vision, we are committed to
+              professionalism and timely and quality service delivery
+            </p>
+            <div class="flex p-5">
+              <img
+                class="w-[60px] mr-10"
+                src="./asset/images/relief_international.png"
+                alt=""
+              />
+              <img
+                class="w-[60px] mr-10"
+                src="./asset/images/unicef.png"
+                alt=""
+              />
+              <img
+                class="w-[60px] "
+                src="/asset/images/UNICEF-logo 1.png"
+                alt=""
+              />
+            </div>
+            <button
+              class="bg-gradient-to-r from-[#FE7D15] to-[#FB4738] text-white rounded-full px-4 py-3 text-[16px] font-semibold"
+            >
+              Read More <i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- img section  -->
+      <div>
+        <img class="p-10 lg:mb-20" src="./asset/images/Group 879.png" alt="" />
+      </div>
+
+      <!-- card section  -->
+      <div>
+        <h3 class="text-5xl font-bold text-[#441355] text-center">
+          Our Services
+        </h3>
+        <p class="text-center lg:px-72 py-4">
+          Smart Vision for Consultancy and Development was incorporated in 2011
+          in Somalia. We focus majorly on monitoring, evaluation, research and
+          learning (MERL).
+        </p>
+      </div>
+      <section class="container">
+        <div class="card__container swiper">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__article swiper-slide shadow-2xl">
+                <div class="card__image ml-20 md:ml-24 lg:ml-28 border-4 border-[#9e75ab]">
+                  <img
+                    src="./asset/images/Vector.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name text-4xl font-bold py-2 text-[#441355]">
+                    Third Party Monitoring
+                  </h3>
+                  <a href="#" class="card__button underline">See More</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide shadow-2xl">
+                <div class="card__image ml-20 md:ml-24 lg:ml-28 border-4 border-[#9e75ab]">
+                  <img
+                    src="./asset/images/Vector1.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name text-4xl font-bold text-[#441355]">
+                    Midterm and endline Evaluations
+                  </h3>
+                  <a href="#" class="card__button underline">see More</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide shadow-2xl">
+                <div class="card__image ml-20 md:ml-24 lg:ml-28 border-4 border-[#9e75ab]">
+                  <img
+                    src="./asset/images/Group.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name text-4xl font-bold py-2 text-[#441355]">
+                    Baseline surveys
+                  </h3>
+                  <a href="#" class="card__button underline">see More</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide shadow-2xl">
+                <div class="card__image ml-20 md:ml-24 lg:ml-28 border-4 border-[#9e75ab]">
+                  <img
+                    src="./asset/images/Vector.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name text-4xl font-bold py-2 text-[#441355]">
+                    Midterm and endline
+                  </h3>
+                  <a href="#" class="card__button underline">see More</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide shadow-2xl">
+                <div class="card__image ml-20 md:ml-24 lg:ml-28 border-4 border-[#9e75ab]">
+                  <img
+                    src="./asset/images/Vector1.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name text-4xl font-bold py-2 text-[#441355]">
+                    Lexa Kin
+                  </h3>
+                  <a href="#" class="card__button underline">see More</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div
+            class="swiper-button-next border-8 border-white shadow-2xl bg-[#FB4738] text-white rounded-full"
+          >
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+
+          <div
+            class="swiper-button-prev border-8 border-white shadow-2xl bg-[#FB4738] text-white rounded-full"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Thematic Areas  -->
+      <section>
+        <h3 class="text-5xl font-bold text-center text-[#441355]">
+          Thematic Areas
+        </h3>
+        <p class="text-center lg:px-72 py-4">
+          Smart Vision for Consultancy and Development was incorporated in 2011
+          in Somalia.
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-3 lg:px-10 items-center justify-between"
+        >
+          <div class="">
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full ml-2 mr-5"
+                src="./asset/images/access.png"
+                alt=""
+              />
+              Health
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/health.png"
+                alt=""
+              />
+              Nutrition
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/busniss.png"
+                alt=""
+              />
+              Education
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/educa.png"
+                alt=""
+              />
+              Food Security
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/health.png"
+                alt=""
+              />
+              Quality Infrastructure
+            </p>
+          </div>
+          <div class="">
+            <img
+              class="w-[300px] object-cover"
+              src="./asset/images/01_Phone_Mockup 1.png"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/child.png"
+                alt=""
+              />
+              Accountability
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/health.png"
+                alt=""
+              />
+              Child Protection
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/access.png"
+                alt=""
+              />
+              Gender
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/busniss.png"
+                alt=""
+              />
+              Business development
+            </p>
+            <p
+              class="bg-[#441355] my-4 w-72 rounded-full h-16 flex text-white items-center text-xl font-semibold"
+            >
+              <img
+                class="bg-[#FB4738] rounded-full mr-5 ml-2"
+                src="./asset/images/educa.png"
+                alt=""
+              />Value chain Development
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team -->
+      <section class="px-3 lg:px-10 lg:py-20">
+        <h3 class="text-5xl py-5 font-bold text-[#441355] text-center">
+          Our Team
+        </h3>
+        <p class="text-center lg:px-72 py-4 lg:pb-52">
+          Smart Vision for Consultancy and Development was incorporated in 2011
+          in Somalia.
+        </p>
+
+        <div
+          class="grid grid-cols-1 gap-20 md:gap-20 lg:gap-5 mt-28 md:mt-20 md:grid-cols-2 lg:grid-cols-4 px-3"
+        >
+          <div class="border shadow-2xl w-72 h-44 rounded-lg">
+            <img
+              class="-mt-20 border-2 bg-[#FB4738] rounded-full p-2 w-36 border-white ml-14"
+              src="./asset/images/Ellipse 50.png"
+              alt=""
+            />
+            <h3 class="text-xl font-bold text-center">Ismail Aden Haibe</h3>
+            <p class="text-center">Cheif Executive Officer</p>
+            <img
+              class="w-20 ml-24 py-4"
+              src="./asset/images/Group 506.png"
+              alt=""
+            />
+          </div>
+          <div class="border shadow-2xl w-72 h-44 rounded-lg">
+            <img
+              class="-mt-20 border-2 bg-[#FB4738] rounded-full p-2 w-36 border-white ml-14"
+              src="./asset/images/takku.png"
+              alt=""
+            />
+            <h3 class="text-xl font-bold text-center">David Ondijo (PhD)</h3>
+            <p class="text-center">Cheif Executive Officer</p>
+            <img
+              class="w-20 ml-24 py-4"
+              src="./asset/images/Group 506.png"
+              alt=""
+            />
+          </div>
+          <div class="border shadow-2xl w-72 h-44 rounded-lg">
+            <img
+              class="-mt-20 border-2 bg-[#FB4738] rounded-full p-2 w-36 border-white ml-14"
+              src="./asset/images/ahamed.png"
+              alt=""
+            />
+            <h3 class="text-xl font-bold text-center">Ahmed Hersi Osman</h3>
+            <p class="text-center">Cheif Executive Officer</p>
+            <img
+              class="w-20 ml-24 py-4"
+              src="./asset/images/Group 506.png"
+              alt=""
+            />
+          </div>
+          <div class="border shadow-2xl w-72 h-44 rounded-lg">
+            <img
+              class="-mt-20 border-2 bg-[#FB4738] rounded-full p-2 w-36 border-white ml-14"
+              src="./asset/images/ali.png"
+              alt=""
+            />
+            <h3 class="text-xl font-bold text-center">Ahmed Yusuf Ali</h3>
+            <p class="text-center">Cheif Executive Officer</p>
+            <img
+              class="w-20 ml-24 py-4"
+              src="./asset/images/Group 506.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Clients -->
+      <section class="px-3 lg:px-10">
+        <h3 class="text-5xl font-bold text-[#441355] text-center py-10">
+          Our Clients
+        </h3>
+        <img class="py-5" src="./asset/images/Group 883.png" alt="" />
+      </section>
+
+      <!-- Testimonial -->
+      <section class="lg:px-10 lg:py-20">
+        <div class="lg:px-10 lg:py-20">
+          <h3 class="text-5xl font-bold text-[#441355] text-center">
+            Testimonial
+          </h3>
+          <div class="my-20">
+            <hr class="border-2" />
+            <img
+              class=" ml-20 lg:ml-[500px] -mt-10"
+              src="./asset/images/Group 518.png"
+              alt=""
+            />
+          </div>
+          <p class="text-center px-5 lg:px-72 py-4">
+            Kindly do not hesitate to enter into collaboration with Smart Vision
+            for similar activities, as UNICEF was very pleased and satisfied by
+            their work
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 px-5 md:grid-cols-3 lg:grid-cols-9 gap-10 items-center justify-center">
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 52.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 54.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 55.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 53.png" alt="" />
+          <div>
+            <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 56.png" alt="" />
+            
+          </div>
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 57.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 58.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 51.png" alt="" />
+          <img class="w-20 transition duration-300 ease-in-out hover:scale-150" src="./asset/images/Ellipse 52.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    
+
+    <!-- Footer -->
+  <footer class="bg-[#060606] text-gray-200">
+    <div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <img class="w-20 mb-6" src="./asset/images/Group 617.png" alt="Logo">
+          <h6 class="text-lg font-semibold mb-4">Contact</h6>
+          <ul>
+            <li class="mb-2">
+              <a href="mailto:info@smartvisionconsultancy.org" class="hover:underline">Email: info@smartvisionconsultancy.org</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Address: Horn of Africa - Somalia</a>
+            </li>
+            <li>
+              <a href="tel:+252907797395" class="hover:underline">Call Us: +252 90 7797395</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="text-lg font-semibold mb-4">Services</h6>
+          <ul>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Branding</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Design</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Advertisement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="text-lg font-semibold mb-4">Company</h6>
+          <ul>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">About us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:underline">Jobs</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Press kit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="w-36 mb-6" src="./asset/images/objects.png" alt="Objects">
+          <h6 class="text-lg font-semibold mb-4">Join the Conversation</h6>
+          <p>TOGETHER WE ARE STRONGER. JOIN THE CONVERSATION.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#060606] py-4 px-10">
+      <div class="max-w-6xl mx-auto text-center text-gray-400 text-sm">
+        <p>&copy; 2024 - All rights reserved by ACME Industries Ltd</p>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
